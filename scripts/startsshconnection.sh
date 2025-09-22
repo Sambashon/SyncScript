@@ -5,7 +5,7 @@ echo $device
 if [ "$connectionSuccessful" == "true" ]; then
     if [ "$device" == "desktop" ]; then
         ssh ${LAPTOP_USER}@${LAPTOP_IP}
-    elif [ "$device" == "laptop" == "true" ]; then
+    elif [ "$device" == "laptop" ]; then
         ssh ${DESKTOP_USER}@${DESKTOP_IP}
     fi
 else
